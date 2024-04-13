@@ -94,7 +94,7 @@ func isOverheadClear():
 	return !crouchRaycast1.is_colliding() && !crouchRaycast2.is_colliding();
 
 func resetStand():
-	if stuckUnderObject && isOverheadClear() && !Input.is_action_pressed("crouch"):
+	if (stuckUnderObject && isOverheadClear() && !Input.is_action_pressed("crouch")):
 		stand();
 		stuckUnderObject = false;
 
