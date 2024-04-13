@@ -411,8 +411,8 @@ autoplay = "idle"
 
 [node name="CrouchRaycast1" type="RayCast2D" parent="."]
 position = Vector2(-8, 0)
-target_position = Vector2(0, -30)
+target_position = Vector2(2.08165e-12, -35)
 
 [node name="CrouchRaycast2" type="RayCast2D" parent="."]
 position = Vector2(8, 1)
-target_position = Vector2(0, -30)
+target_position = Vector2(0, -35)
