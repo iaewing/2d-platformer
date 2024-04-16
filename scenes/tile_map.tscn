@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://b75iiw64dg1bg"]
+[gd_scene load_steps=2 format=3 uid="uid://b4xb7gri1b76f"]
 
-[ext_resource type="TileSet" uid="uid://bddbl3u4r2ej6" path="res://resources/default_tileset.tres" id="1_14eos"]
+[ext_resource type="TileSet" uid="uid://b4jmxrheqmjy4" path="res://resources/default_tileset.tres" id="1_14eos"]
 
 [node name="TileMap" type="TileMap"]
 tile_set = ExtResource("1_14eos")

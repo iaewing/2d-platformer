@@ -94,7 +94,9 @@ func isOverheadClear():
 	return !crouchRaycast1.is_colliding() && !crouchRaycast2.is_colliding();
 
 func resetStand():
-	if (stuckUnderObject && isOverheadClear() && !Input.is_action_pressed("crouch")):
+	#FIXME: If I remove !is_on_floor we can jump then crouch; but we lose gravity & can jump while maintaining crouch
+	# If I maintain it; jump/double jump works correctly but we lose mid-air crouch
+	if (stuckUnderObject && isOverheadClear() && !Input.is_action_pressed("crouch")) || !is_on_floor():
 		stand();
 		stuckUnderObject = false;
 
