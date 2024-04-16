@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dd7l5ld1w75ik"]
+[gd_scene load_steps=7 format=3 uid="uid://dd7l5ld1w75ik"]
 
 [ext_resource type="PackedScene" uid="uid://cqv11wws5gbrf" path="res://scenes/player.tscn" id="1_65itd"]
 [ext_resource type="PackedScene" uid="uid://ducuk0ak0mist" path="res://scenes/platform.tscn" id="2_gyu6j"]
 [ext_resource type="PackedScene" uid="uid://bkilbqa4dmdt3" path="res://scenes/box.tscn" id="3_y0sbv"]
+[ext_resource type="PackedScene" uid="uid://b75iiw64dg1bg" path="res://scenes/tile_map.tscn" id="4_0jpgk"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ihvbx"]
 
@@ -46,3 +47,6 @@ scale = Vector2(0.308292, 0.903478)
 shape = SubResource("RectangleShape2D_hmhlb")
 
 [node name="Box" parent="." instance=ExtResource("3_y0sbv")]
+
+[node name="TileMap" parent="." instance=ExtResource("4_0jpgk")]
+layer_0/tile_data = PackedInt32Array(-65536, 65536, 0, -65535, 65536, 0, -65534, 65536, 0, -65533, 65536, 0, -65532, 65536, 0, -65531, 65536, 0, -65530, 65536, 0, -65529, 65536, 0, -65528, 131072, 0, -1, 0, 0, 65535, 0, 1, 131071, 0, 2, 0, 65536, 1, 65536, 65536, 2, 1, 65536, 1, 65537, 65536, 2, 2, 65536, 1, 65538, 65536, 2, 3, 65536, 1, 65539, 65536, 2, 4, 65536, 1, 65540, 65536, 2, 5, 65536, 1, 65541, 65536, 2, 6, 65536, 1, 65542, 65536, 2, 7, 65536, 1, 65543, 65536, 2, 8, 131072, 1, 65544, 131072, 2)
